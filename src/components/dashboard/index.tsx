@@ -15,6 +15,10 @@ export function Dashboard() {
         <h1>25</h1>
         <span>Registros do mês</span>
       </div>
+      <div className={style.cardRegistro}>
+        <h1>25</h1>
+        <span>Atrasados</span>
+      </div>
     </section>
   );
 }
