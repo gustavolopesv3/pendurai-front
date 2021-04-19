@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
+import style from "./app.module.scss";
 import { Dashboard } from "./components/dashboard";
 import { NavBar } from "./components/navbar";
+import { LatestSales } from "./components/satestSales";
 import { api } from "./services/api";
 
 interface ClientsData {
@@ -26,15 +28,10 @@ function App() {
         <div className="content">
           <Dashboard />
 
-          <ul>
-            {clientes.map((cliente) => {
-              return (
-                <li key={cliente.cpf}>
-                  {cliente.name} - {cliente.cpf}
-                </li>
-              );
-            })}
-          </ul>
+          <div className={style.sales}>
+            <LatestSales />
+            <LatestSales />
+          </div>
         </div>
       </div>
     </>
