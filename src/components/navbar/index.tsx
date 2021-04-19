@@ -10,7 +10,9 @@ export function NavBar() {
     <>
       <nav className={style.navbar}>
         <div className={style.logo}>
-          <h1>PendurAi !</h1>
+          <h1>
+            PendurAi <strong>!</strong>{" "}
+          </h1>
         </div>
         <ul>
           <li>

@@ -1,0 +1,53 @@
+section {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  background: #5c5167;
+  width: 80%;
+  border-radius: 10px;
+  margin: 2rem;
+  .cardReceber {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #ff0000;
+    padding: 1rem;
+    border-radius: 10px;
+
+    span {
+      color: #ff7a00;
+    }
+  }
+
+  .cardRecebido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #1db105;
+    padding: 1rem;
+    border-radius: 10px;
+
+    span {
+      color: #ff7a00;
+    }
+  }
+
+  .cardRegistro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    color: #887b07;
+    padding: 1rem;
+    border-radius: 10px;
+
+    span {
+      color: #ff7a00;
+    }
+  }
+}

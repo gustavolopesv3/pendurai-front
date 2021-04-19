@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Dashboard } from "./components/dashboard";
 import { NavBar } from "./components/navbar";
 import { api } from "./services/api";
 
@@ -22,16 +23,19 @@ function App() {
     <>
       <div className="container">
         <NavBar />
+        <div className="content">
+          <Dashboard />
 
-        <ul>
-          {clientes.map((cliente) => {
-            return (
-              <li key={cliente.cpf}>
-                {cliente.name} - {cliente.cpf}
-              </li>
-            );
-          })}
-        </ul>
+          <ul>
+            {clientes.map((cliente) => {
+              return (
+                <li key={cliente.cpf}>
+                  {cliente.name} - {cliente.cpf}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
       </div>
     </>
   );

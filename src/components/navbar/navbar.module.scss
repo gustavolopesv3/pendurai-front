@@ -4,12 +4,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 13%;
+  width: 20%;
 
   .logo {
     color: #f8c630;
     font-size: 1.5rem;
     margin-bottom: 2rem;
+
+    strong {
+      font-size: 4rem;
+    }
   }
 
   ul {
