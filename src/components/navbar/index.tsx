@@ -22,7 +22,10 @@ export function NavBar() {
             </Link>
           </li>
           <li>
-            <RiStoreLine /> <a href="/">Venda</a>
+            <Link to="/vendas">
+              <RiStoreLine />
+              Vendas
+            </Link>
           </li>
           <li>
             <Link to="/clientes">
@@ -30,7 +33,9 @@ export function NavBar() {
             </Link>
           </li>
           <li>
-            <RiArchiveLine /> <a href="/">Produtos</a>
+            <Link to="/produtos">
+              <RiArchiveLine /> Produtos
+            </Link>
           </li>
         </ul>
       </nav>
