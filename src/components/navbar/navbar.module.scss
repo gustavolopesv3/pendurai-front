@@ -23,14 +23,15 @@
   }
 
   ul li {
+    font-weight: bold;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background: #fff;
     color: #22162b;
     font-size: 1.2rem;
     margin: 0.5rem;
-    padding: 0.2rem;
+    padding-left: 0.5rem;
     border-radius: 10px;
 
     a {
