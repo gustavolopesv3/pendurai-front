@@ -5,6 +5,7 @@ import {
   RiSearchLine,
   RiArchiveLine,
 } from "react-icons/ri";
+import { Link } from "react-router-dom";
 export function NavBar() {
   return (
     <>
@@ -16,13 +17,17 @@ export function NavBar() {
         </div>
         <ul>
           <li>
-            <RiGridFill /> <a href="/">DashBoard</a>
+            <Link to="/">
+              <RiGridFill /> Dashboard
+            </Link>
           </li>
           <li>
             <RiStoreLine /> <a href="/">Venda</a>
           </li>
           <li>
-            <RiSearchLine /> <a href="/">Clientes</a>
+            <Link to="/clientes">
+              <RiSearchLine /> Clientes
+            </Link>
           </li>
           <li>
             <RiArchiveLine /> <a href="/">Produtos</a>
