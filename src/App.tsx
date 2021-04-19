@@ -1,9 +1,7 @@
-import { useEffect, useState } from "react";
 import style from "./app.module.scss";
 import { Dashboard } from "./components/dashboard";
 import { NavBar } from "./components/navbar";
 import { LatestSales } from "./components/satestSales";
-import { api } from "./services/api";
 
 function App() {
   return (

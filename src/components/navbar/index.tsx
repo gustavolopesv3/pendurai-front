@@ -16,16 +16,16 @@ export function NavBar() {
         </div>
         <ul>
           <li>
-            <RiGridFill /> <a href="">DashBoard</a>
+            <RiGridFill /> <a href="/">DashBoard</a>
           </li>
           <li>
-            <RiStoreLine /> <a href="">Venda</a>
+            <RiStoreLine /> <a href="/">Venda</a>
           </li>
           <li>
-            <RiSearchLine /> <a href="">Clientes</a>
+            <RiSearchLine /> <a href="/">Clientes</a>
           </li>
           <li>
-            <RiArchiveLine /> <a href="">Produtos</a>
+            <RiArchiveLine /> <a href="/">Produtos</a>
           </li>
         </ul>
       </nav>

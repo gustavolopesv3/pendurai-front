@@ -4,11 +4,13 @@ import style from "./sales.module.scss";
 
 interface SalesData {
   id: number;
+  status: boolean;
   client: {
     name: string;
   };
   products: [
     {
+      id: number;
       name: string;
       price: number;
     }
@@ -24,7 +26,6 @@ export function LatestSales() {
   const getSales = async () => {
     const response = await api.get("/sale");
     setSales(response.data);
-    console.log(response.data);
   };
 
   return (
@@ -38,7 +39,7 @@ export function LatestSales() {
                 <h3>{sale.client.name}</h3>
                 <div>
                   {sale.products.map((product) => {
-                    return <span>{product.name}</span>;
+                    return <span key={product.id}>{product.name}</span>;
                   })}
                 </div>
               </div>
